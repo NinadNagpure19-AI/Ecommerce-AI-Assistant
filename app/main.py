@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))  # ensures faq_2, sql, router are importable on Streamlit Cloud
+
 import streamlit as st
 from faq_2 import ingest_faq_data, faq_rag_pipeline
 from sql import sql_chain

@@ -1,7 +1,23 @@
+# Web framework for the chatbot UI
 streamlit==1.58.0
+
+# Data handling for FAQ CSV ingestion
 pandas==3.0.3
+
+# Loads API keys from .env file locally
 python-dotenv==1.2.2
+
+# Groq LLM inference client (Llama 3.3 70B)
 groq==1.4.0
+
+# Semantic routing to classify queries as faq/sql/out-of-domain
 semantic-router==0.1.15
+
+# Vector store for FAQ embeddings
 chromadb==1.5.9
+
+# Embedding model (all-MiniLM-L6-v2) for ChromaDB and semantic router
 sentence-transformers==5.5.1
+
+# Pinned to fix protobuf conflict with chromadb==1.5.9 on Streamlit Cloud
+protobuf==3.20.3
